@@ -1,0 +1,25 @@
+//group 'Bunnnana'
+//version '1.0-SNAPSHOT'
+
+plugins {
+    id'java'
+    id'application'
+    id'com.github.johnrengelman.shadow' version '1.2.4'
+}
+
+mainClassName = 'com.bunnana.bot.Bot'
+
+version '1.0'
+def jdaVersion = '3.3.1_290'
+
+sourceCompatibility = 1.8
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile "net.dv8tion:JDA:$jdaVersion"
+}
+
+compileJava.options.encoding = 'UTF-8'
